@@ -1,3 +1,5 @@
+Biblioteca / style_responsive_arreglado.css
+
 /* ==========================================================================
    ESTILO INSPIRADO EN MODELO WHITE (FIXDATE)
    ========================================================================= */
@@ -45,7 +47,10 @@ body {
 
 .hero-bg {
     position: absolute;
-    top: 0; left: 0; width: 100%; height: 100%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     background-image: url('../assets/img/home/fondoinv.jpg');
     background-size: cover;
     background-position: center;
@@ -104,7 +109,8 @@ body {
 }
 
 .section-beige {
-    background-color: #f4eee0; /* Tono beige único e ideal */
+    background-color: #f4eee0;
+    /* Tono beige único e ideal */
 }
 
 .container {
@@ -120,7 +126,7 @@ body {
 
 .section-title {
     font-family: 'Playfair Display', serif;
-    font-size: 0.95 rem;
+    font-size: 0.95rem;
     font-weight: 400;
     color: #2b2b2b;
     margin-bottom: 40px;
@@ -139,24 +145,29 @@ body {
     font-size: 3.5rem;
     margin-bottom: 20px;
 }
+
 /* Ajustamos los elementos del timeline para que respiren */
 .timeline-item {
     position: relative;
     width: 20%;
     text-align: center;
     z-index: 2;
-    padding: 0 5px; /* Crea un colchón a los lados para que no se peguen */
+    padding: 0 5px;
+    /* Crea un colchón a los lados para que no se peguen */
 }
 
 /* Achicamos la letra y el espaciado entre letras */
 .timeline-item h3 {
     font-family: 'Montserrat', sans-serif;
-    font-size: 13px; /* Reducido de 18px a 13px para que entre 'CEREMONIA' sin solparse */
-    letter-spacing: 1px; /* Reducido para ahorrar espacio horizontal */
+    font-size: 13px;
+    /* Reducido de 18px a 13px para que entre 'CEREMONIA' sin solparse */
+    letter-spacing: 1px;
+    /* Reducido para ahorrar espacio horizontal */
     text-transform: uppercase;
     color: #4a4a4a;
     margin-bottom: 8px;
-    word-break: break-word; /* Si una palabra es larguísima la acomoda sin romper todo */
+    word-break: break-word;
+    /* Si una palabra es larguísima la acomoda sin romper todo */
 }
 
 /* ==========================================================================
@@ -172,9 +183,11 @@ body {
 }
 
 .regalo .section-title {
-    font-family: 'Playfair Display', serif;
-    font-size: 2rem;
+    font-family: 'Signatie', serif;
+    font-size: 3.5rem;
+    font-weight: 400;
     margin-bottom: 20px;
+    color: #b58a52;
 }
 
 .regalo .section-text {
@@ -187,10 +200,14 @@ body {
 
 /* --- ESTA ES LA REGLA QUE ARREGLA LA IMAGEN --- */
 .regalo img {
-    max-width: 150px;    /* ¡Ajusta este número para achicarla a tu gusto! */
-    height: auto;        /* Mantiene la proporción sin deformar */
-    display: block;      /* Necesario para centrar con margins */
-    margin: 0 auto 20px; /* Centra horizontalmente y da aire abajo */
+    max-width: 150px;
+    /* ¡Ajusta este número para achicarla a tu gusto! */
+    height: auto;
+    /* Mantiene la proporción sin deformar */
+    display: block;
+    /* Necesario para centrar con margins */
+    margin: 0 auto 20px;
+    /* Centra horizontalmente y da aire abajo */
 }
 
 /* ==========================================================================
@@ -277,15 +294,17 @@ body {
 /* ==========================================================================
    CUENTA REGRESIVA
    ========================================================================= */
-.countdown-section { /* Si tienes un contenedor principal o <section> alrededor */
-    padding: 100px 20px; /* 100px de aire arriba y abajo */
+.countdown-section {
+    padding: 140px 20px;
 }
+
 
 .countdown-container {
     display: flex;
     justify-content: center;
     gap: 20px;
-    margin: 40px auto 0; /* 40px de aire arriba para separarlo del título */
+    margin: 40px auto 0;
+    /* 40px de aire arriba para separarlo del título */
     max-width: 500px;
 }
 
@@ -397,9 +416,9 @@ body {
     overflow: hidden;
     display: block;
     background-color: #ffffff;
-    margin-top: 5rem;      
-    margin-bottom: 5rem;    
-    padding: 8rem 2rem;     
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    padding: 8rem 2rem;
     text-align: center;
 }
 
@@ -477,7 +496,7 @@ body {
     padding: 12px;
     background: #ffffff;
     border-radius: 12px;
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15); 
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
     box-sizing: border-box;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -597,11 +616,12 @@ body {
     left: 10%;
     right: 10%;
     /* Alineación vertical al centro exacto del contenedor del ícono/corazón */
-    top: 108px; 
+    top: 108px;
     height: 2px;
     background: #d9c7a1;
     z-index: 0;
 }
+
 .timeline-row {
     display: flex;
     align-items: center;
@@ -769,11 +789,14 @@ body {
    ========================================================================= */
 /* Pinta todo el fondo de la sección de lado a lado */
 .timeline-section {
-    background-color: #f4ece0; /* O el color beige exacto de tu diseño (ej: #f7f3ed) */
+    background-color: #f4ece0;
+    /* O el color beige exacto de tu diseño (ej: #f7f3ed) */
     width: 100%;
-    padding: 60px 0; /* Espacio arriba y abajo para que no quede pegado */
+    padding: 60px 0;
+    /* Espacio arriba y abajo para que no quede pegado */
     margin: 0;
 }
+
 /* Tipografía 'Signatie' para el título de la cronología */
 .timeline-section .section-title h2 {
     font-family: 'Signatie', serif;
@@ -830,7 +853,8 @@ body {
     justify-content: center;
     margin: 0 auto 18px;
     border-radius: 50%;
-    background: #f4eee0; /* Adaptado al color beige de la sección */
+    background: #f4eee0;
+    /* Adaptado al color beige de la sección */
     color: #8c764d;
     font-size: 18px;
     position: relative;
@@ -839,13 +863,16 @@ body {
 
 .timeline-item h3 {
     font-family: 'Montserrat', sans-serif;
-    font-size: 13px; /* Tamaño ideal */
+    font-size: 13px;
+    /* Tamaño ideal */
     letter-spacing: 1px;
     text-transform: uppercase;
     color: #4a4a4a;
     margin-bottom: 8px;
-    white-space: nowrap; /* ¡OBLIGA a que la palabra esté en una sola línea! */
+    white-space: nowrap;
+    /* ¡OBLIGA a que la palabra esté en una sola línea! */
 }
+
 .timeline-item p {
     font-family: 'Montserrat', sans-serif;
     font-size: 15px;
@@ -891,46 +918,494 @@ body {
 }
 
 @keyframes bounce {
-    0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
-    40% { transform: translateY(-10px); }
-    60% { transform: translateY(-5px); }
-}/* ==========================================================================
-   CRONOLOGÍA VERTICAL PARA CELULARES
-   ========================================================================= */
-@media (max-width: 768px) {
-    .timeline {
-        display: flex !important;
-        flex-direction: column !important; /* Pasa los ítems a columna */
-        align-items: center !important;
-        gap: 35px !important;
-        padding: 20px 0 !important;
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
     }
 
-    .timeline::before {
-        /* Pasa la línea de horizontal a vertical */
-        top: 20px !important;
-        bottom: 20px !important;
-        left: 50% !important;
-        transform: translateX(-50%) !important;
-        width: 2px !important;
-        height: auto !important;
+    40% {
+        transform: translateY(-10px);
+    }
+
+    60% {
+        transform: translateY(-5px);
+    }
+}
+
+/* ==========================================================================
+   CRONOLOGÍA VERTICAL PARA CELULARES
+   ========================================================================= */
+
+/* ==========================================================================
+   RESPONSIVE COMPLETO
+   ========================================================================== */
+
+/* Evita scroll horizontal provocado por elementos grandes */
+html,
+body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+/* --------------------------------------------------------------------------
+   TABLET
+   -------------------------------------------------------------------------- */
+@media (max-width: 900px) {
+
+    .section {
+        padding: 80px 20px;
+    }
+
+    .container,
+    .gallery-container {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .info-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 20px;
+    }
+
+    .info-card {
+        min-width: 0;
+        max-width: none;
+        padding: 35px 25px;
+    }
+
+    .timeline {
+        gap: 10px;
     }
 
     .timeline-item {
-        width: 100% !important;
-        max-width: 280px !important;
-        margin: 0 auto !important;
+        width: 20%;
     }
 
     .timeline-item h3 {
-        font-size: 14px !important;
+        font-size: 12px;
+        white-space: normal;
+    }
+
+    .gallery-item {
+        flex: 0 0 calc(50% - 10px);
+    }
+}
+
+
+/* --------------------------------------------------------------------------
+   CELULAR
+   -------------------------------------------------------------------------- */
+@media (max-width: 600px) {
+
+    /* ===== GENERAL ===== */
+
+    .section {
+        padding: 60px 16px;
+    }
+
+    .container,
+    .small-container,
+    .gallery-container {
+        width: 100%;
+        max-width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+        line-height: 1.25;
+        margin-bottom: 25px;
+    }
+
+    .section-text {
+        font-size: 0.95rem;
+        line-height: 1.7;
+    }
+
+
+    /* ===== PORTADA ===== */
+
+    .hero-section {
+        min-height: 100svh;
+        height: 100svh;
+        padding: 20px;
+    }
+
+    .hero-content {
+        width: 100%;
+        padding: 20px 10px;
+    }
+
+    .hero-tagline {
+        font-size: 0.68rem;
+        letter-spacing: 3px;
+        margin-bottom: 12px;
+    }
+
+    .wedding-title {
+        font-size: clamp(2.6rem, 13vw, 4rem);
+        line-height: 1;
+        margin-bottom: 18px;
+    }
+
+    .hero-date {
+        font-size: 1.05rem;
+        letter-spacing: 1px;
+    }
+
+    .arrow-down {
+        margin-top: 35px;
+    }
+
+
+    /* ===== INFORMACIÓN / TARJETAS ===== */
+
+    .cards-grid,
+    .info-grid {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 18px;
+        margin-top: 35px;
+    }
+
+    .info-card {
+        width: 100%;
+        min-width: 0;
+        max-width: none;
+        padding: 30px 20px;
+        border-radius: 16px;
+    }
+
+    .info-icon {
+        font-size: 34px;
+        margin-bottom: 18px;
+    }
+
+    .info-card h3 {
+        font-size: 1.35rem;
+        line-height: 1.3;
+    }
+
+    .info-card p {
+        font-size: 0.9rem;
+        line-height: 1.7;
+        overflow-wrap: anywhere;
+    }
+
+    .info-card .place {
+        font-size: 1rem;
+    }
+
+    .info-card .address {
+        font-size: 0.82rem;
+        overflow-wrap: anywhere;
+    }
+
+
+    /* ===== REGALO ===== */
+
+    .regalo {
+        padding: 60px 16px;
+    }
+
+    .regalo .section-title {
+        font-size: 1.8rem;
+    }
+
+    .regalo .section-text {
+        font-size: 0.92rem;
+    }
+
+    .regalo img {
+        width: min(150px, 55vw);
+        max-width: 150px;
+        height: auto;
+    }
+
+    .cbu-box {
+        width: 100%;
+        max-width: 350px;
+        padding: 18px;
+        overflow-wrap: anywhere;
+    }
+
+
+    /* ===== CUENTA REGRESIVA ===== */
+
+  /* Fuerza el espacio en celulares y pantallas chicas */
+@media (max-width: 600px) {
+    section.countdown-section,
+    .countdown-section.section-white {
+        padding-top: 100px !important;
+        padding-bottom: 100px !important;
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+    }
+
+    /* Por si el contenedor de adentro está frenando el diseño */
+    section.countdown-section .container {
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
+    }
+}
+    /* ===== UBICACIÓN / TIMELINE (EMBLOCADO E INDEPENDIENTE) ===== */
+
+    .timeline-section {
+        padding: 60px 16px;
+        background-color: #f4ece0 !important;
+        /* ¡REPARADO! Recupera el fondo beige de la versión de escritorio */
+    }
+
+    .timeline-section .section-title h2 {
+        font-family: 'Signatie', serif;
+        font-size: clamp(2.4rem, 12vw, 3.5rem);
+        line-height: 1.1;
+    }
+
+    /* Contenedor principal sin líneas de fondo */
+    .timeline {
+        width: 100%;
+        max-width: 360px;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 20px !important;
+        margin: 40px auto 0;
+        padding: 0 !important;
+    }
+
+    /* ELIMINAMOS POR COMPLETO LA LÍNEA */
+    .timeline::before {
+        display: none !important;
+    }
+
+    /* Cada bloque/tarjeta individual */
+    .timeline-item {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 0 !important;
+        padding: 30px 20px !important;
+        background-color: #ffffff !important;
+        /* Tarjetas blancas para que resalten sobre el fondo beige general */
+        border: 1px solid #f2ede4;
+        border-radius: 16px;
+        /* Bordes ligeramente más suaves y modernos */
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        text-align: center !important;
+        box-shadow: 0 4px 15px rgba(140, 118, 77, 0.04);
+        /* Sombra muy sutil que le da profundidad */
+    }
+
+    /* Ajuste para que los íconos no se deformen */
+    .timeline-item img {
+        width: 55px !important;
+        height: 55px !important;
+        object-fit: contain !important;
+        margin: 0 auto 14px !important;
+    }
+
+    /* Ocultamos el corazón en móvil */
+    .timeline-heart {
+        display: none !important;
+    }
+
+    /* Título del evento (ej: LUGAR, CEREMONIA) */
+    .timeline-item h3 {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 13px !important;
+        font-weight: 600 !important;
+        letter-spacing: 1.5px !important;
+        text-transform: uppercase !important;
+        color: #2b2b2b !important;
+        margin: 0 0 8px 0 !important;
         white-space: normal !important;
     }
+
+    /* Horario (ej: 17:45 hs) */
+    .timeline-item p {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 14px !important;
+        color: #8c764d !important;
+        font-weight: 500 !important;
+        margin: 0 !important;
+    }
+
+    /* ===== GALERÍA ===== */
+
+    .gallery-container {
+        padding: 0 12px;
+    }
+
+    .gallery-title {
+        font-family: 'Signatie', cursive;
+        font-size: 25px;
+        line-height: 1.25;
+    }
+
+    .gallery-subtitle {
+        font-size: 13px;
+        line-height: 1.5;
+        padding: 0 10px;
+        margin-bottom: 20px;
+    }
+
+    .gallery-icon {
+        font-size: 23px;
+        margin-bottom: 25px;
+    }
+
+    .gallery-slider {
+        width: 100%;
+        overflow: hidden;
+        padding: 10px 4px 25px;
+    }
+
+    .gallery-track {
+        gap: 12px;
+    }
+
+    /* Una foto grande por vez en celular */
+    .gallery-item {
+        flex: 0 0 100% !important;
+        width: 100%;
+        max-width: 100%;
+        padding: 10px;
+        border-radius: 12px;
+    }
+
+    .gallery-item img {
+        width: 100%;
+        max-width: none;
+        height: auto;
+        aspect-ratio: 4 / 5;
+        object-fit: cover;
+        border-radius: 8px;
+    }
+
+    .polaroid-card {
+        width: 100%;
+        min-width: 100%;
+        padding: 12px 12px 22px;
+    }
+
+    .polaroid-photo {
+        width: 100%;
+        aspect-ratio: 1 / 1;
+    }
+
+    .polaroid-caption {
+        font-size: 1rem;
+        margin-top: 14px;
+    }
+
+    .gallery-dots {
+        gap: 12px;
+        margin-top: 25px;
+    }
+
+    .dot {
+        width: 9px;
+        height: 9px;
+    }
+
+/* --- ESTILO GLOBAL PARA LA FRASE (Para todas las pantallas) --- */
 .frase-text {
-    font-family: 'Signatie', serif; /* O cursive / sans-serif según cómo hayas cargado el @font-face */
-    font-size: 1.5rem;             /* Al ser cursiva, suele necesitar un tamaño más grande para leerse bien */
-    line-height: 1.3;
-    color: #2b2b2b;                /* El tono oscuro elegante que venías usando */
-    font-weight: 400;
+    font-family: 'Signatie', cursive !important; /* El !important asegura que no te lo pise ninguna otra regla */
+    line-height: 1.2;
+    letter-spacing: 0;
+    text-transform: none;
     text-align: center;
+    display: block;
+    width: 100%;
+}
+
+/* Tamaño para pantallas grandes (Compu) */
+@media (min-width: 601px) {
+    .frase-text {
+        font-size: 3.5rem; 
+        margin: 20px 0;
+    }
+}
+
+/* Tamaño para pantallas chicas (Celular) */
+@media (max-width: 600px) {
+    .frase-text {
+        font-size: 2.5rem; 
+        margin: 15px 0;
+    }
+}
+    /* ===== BIENVENIDA ===== */
+
+    .welcome-content {
+        width: 100%;
+        max-width: 100%;
+        padding: 25px 20px;
+    }
+
+    .welcome-date {
+        font-size: 13px;
+        letter-spacing: 3px;
+    }
+
+    .welcome-title {
+        font-size: clamp(2.5rem, 13vw, 4rem);
+        line-height: 1;
+    }
+
+    .welcome-text {
+        font-size: 15px;
+        line-height: 1.4;
+    }
+
+    .welcome-subtitle {
+        font-size: 11px;
+        margin-bottom: 30px;
+    }
+
+    .welcome-buttons {
+        width: 100%;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .welcome-btn {
+        width: 100%;
+        max-width: 280px;
+        padding: 15px 20px;
+        font-size: 15px;
+    }
+
+
+    /* ===== FOOTER ===== */
+
+    .footer-section {
+        padding: 60px 16px;
+    }
+
+    .footer-title {
+        font-size: 2.3rem;
+        line-height: 1.2;
+    }
+
+    .footer-date {
+        font-size: 0.9rem;
+        letter-spacing: 1.5px;
+    }
+
+    .footer-names {
+        font-size: 1.2rem;
+    }
 }
