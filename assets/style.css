@@ -1,4 +1,3 @@
-Biblioteca / style_responsive_arreglado.css
 
 /* ==========================================================================
    ESTILO INSPIRADO EN MODELO WHITE (FIXDATE)
@@ -126,7 +125,7 @@ body {
 
 .section-title {
     font-family: 'Playfair Display', serif;
-    font-size: 0.95rem;
+    font-size: 0.35rem;
     font-weight: 400;
     color: #2b2b2b;
     margin-bottom: 40px;
@@ -425,7 +424,7 @@ body {
 .confirm-bg {
     position: absolute;
     inset: 0;
-    background-image: url("../assets/img/home/fondoblanco.jpg");
+;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -1016,18 +1015,31 @@ body {
         padding-left: 0;
         padding-right: 0;
     }
-
-    .section-title {
-        font-size: 1.8rem;
-        line-height: 1.25;
-        margin-bottom: 25px;
+/* 2. Títulos y Nombres Achicados */
+    .timeline-section .section-title h2 {
+        font-family: 'Signatie', serif !important;
+        font-size: 2.2rem !important;
+        line-height: 1.2 !important;
+        margin-bottom: 5px !important;
     }
-
-    .section-text {
-        font-size: 0.95rem;
-        line-height: 1.7;
+    .timeline-subtitle {
+        font-family: 'Montserrat', sans-serif !important;
+        font-size: 1.1rem !important; /* Tamaño ideal y sutil para el celu */
+        color: #666666 !important;
+        text-transform: none !important;
+        margin-top: 5px !important;
+        display: block !important;
     }
-
+    .wedding-title {
+        font-size: 2.4rem !important;
+        line-height: 1.1 !important;
+        margin-bottom: 12px !important;
+    }
+    .welcome-title {
+        font-size: 2.6rem !important;
+        line-height: 1.1 !important;
+        margin-bottom: 15px !important;
+    }
 
     /* ===== PORTADA ===== */
 
@@ -1168,7 +1180,7 @@ body {
 
     .timeline-section .section-title h2 {
         font-family: 'Signatie', serif;
-        font-size: clamp(2.4rem, 12vw, 3.5rem);
+        font-size: clamp(2.4rem, 12vw, 1.5rem);
         line-height: 1.1;
     }
 
@@ -1342,7 +1354,8 @@ body {
 /* Tamaño para pantallas chicas (Celular) */
 @media (max-width: 600px) {
     .frase-text {
-        font-size: 2.5rem; 
+        font-size: 1
+        .5rem; 
         margin: 15px 0;
     }
 }
@@ -1407,5 +1420,166 @@ body {
 
     .footer-names {
         font-size: 1.2rem;
+    }
+}
+
+/* ==========================================================================
+   SOLUCIÓN AL CORTE HORIZONTAL EN CELULARES (FORZADO)
+   ========================================================================== */
+@media (max-width: 600px) {
+    /* Forzamos a que todos los contenedores de tarjetas se apilen verticalmente */
+    .info-grid,
+    .cards-grid,
+    .playlist-section,
+    .notas-section,
+    [class*="-grid"],
+    [class*="-container"] {
+        display: flex !important;
+        flex-direction: column !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+        gap: 20px !important;
+    }
+
+    /* Forzamos a que las tarjetas individuales NO se estiren hacia la derecha */
+    .info-card,
+    .card,
+    [class*="-card"] {
+        width: 100% !important;
+        min-width: 0 !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+
+    /* Achicamos el título de la Cronología del Evento */
+    .timeline-section .section-title h2 {
+        font-family: 'Signatie', serif !important;
+        font-size: 2.2rem !important;
+        line-height: 1.2 !important;
+        margin-bottom: 5px !important;
+    }
+
+    /* 1. Generales de Secciones y Textos */
+    .section {
+        padding: 60px 16px;
+    }
+
+    .container,
+    .small-container,
+    .gallery-container {
+        width: 100%;
+        max-width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+        line-height: 1.25;
+        margin-bottom: 25px;
+    }
+
+    .section-text {
+        font-size: 0.95rem;
+        line-height: 1.7;
+    }
+
+    /* 2. Títulos y Nombres Achicados */
+    .wedding-title {
+        font-size: 2.4rem !important;
+        line-height: 1.1 !important;
+        margin-bottom: 12px !important;
+    }
+
+    .welcome-title {
+        font-size: 2.6rem !important;
+        line-height: 1.1 !important;
+        margin-bottom: 15px !important;
+    }
+
+    /* 3. Tarjetas de Información apiladas correctamente */
+    .info-grid,
+    .cards-grid,
+    .playlist-section,
+    .notas-section {
+        display: flex !important;
+        flex-direction: column !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+        gap: 20px !important;
+    }
+
+    .info-card,
+    .card {
+        width: 100% !important;
+        min-width: 0 !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+
+    /* 4. ARREGLO Y CENTRADO DE TODOS LOS BOTONES (Asistencia, Sugerir Canción, etc.) */
+    .btn,
+    .btn-outline,
+    .btn-full {
+        display: inline-block !important;
+        margin: 15px auto !important;
+        text-align: center !important;
+        width: 100% !important;
+        max-width: 280px !important;
+        box-sizing: border-box !important;
+    }
+
+    /* 5. Galería Horizontal Intacta */
+    .gallery-track {
+        display: flex !important;
+        flex-direction: row !important;
+        gap: 12px !important;
+    }
+
+    .gallery-item {
+        flex: 0 0 100% !important;
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+
+    /* 6. Frase Final */
+    .frase-text {
+        font-size: 1.5rem !important;
+        margin: 15px 0 !important;
+    }
+}
+
+/* --- ESTILO GLOBAL PARA LA FRASE (Para todas las pantallas) --- */
+.frase-text {
+    font-family: 'Signatie', cursive !important;
+    line-height: 1.2;
+    letter-spacing: 0;
+    text-transform: none;
+    text-align: center;
+    display: block;
+    width: 100%;
+}
+
+/* Tamaño para pantallas grandes (Compu) */
+@media (min-width: 601px) {
+    .frase-text {
+        font-size: 3.5rem;
+        margin: 20px 0;
+    }
+}
+
+/* Tamaño para pantallas chicas (Celular) */
+@media (max-width: 600px) {
+    .frase-text {
+        font-size: 1.5rem !important;
+        margin: 15px 0;
     }
 }
