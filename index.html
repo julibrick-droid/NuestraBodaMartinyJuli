@@ -1,1 +1,288 @@
 <h1>Invitación Juli & Martín</h1>
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestra Invitación de Boda</title>
+
+    <!-- FontAwesome y Fuentes -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS y JS -->
+    <link rel="stylesheet" href="assets/style.css">
+    <script src="js/index.js" defer></script>
+    <audio id="bgMusic" loop>
+        <source src="assets/audio/Hallelujah.mp3" type="audio/mpeg">
+    </audio>
+</head>
+
+<body>
+
+    <!-- Pantalla de Bienvenida -->
+    <div id="welcome-screen">
+        <div class="welcome-overlay"></div>
+        <div class="welcome-content">
+            <p class="welcome-date">31 · Octubre · 2026</p>
+            <h1 class="welcome-title">Juli & Martín</h1>
+            <p class="welcome-text">Bienvenidos a nuestra invitación</p>
+            <p class="welcome-subtitle">La música forma parte de la experiencia.</p>
+
+            <div class="welcome-buttons">
+                <button id="musicOn" class="welcome-btn">
+                    <i class="fa-solid fa-music"></i> Ingresar con música
+                </button>
+                <button id="musicOff" class="welcome-btn secondary">
+                    Ingresar sin música
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Audio de Fondo -->
+    <audio id="bgMusic" loop>
+        <source src="assets/audio/musica.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- SECCIÓN 1: PORTADA PRINCIPAL -->
+    <header class="hero-section">
+        <div class="hero-bg"></div>
+        <div class="hero-content">
+            <p class="hero-date">31 . 10 . 2026</p>
+            <p class="hero-tagline">¡NOS CASAMOS!</p>
+            <h1 class="wedding-title">Juli & Martín</h1>
+            <div class="arrow-down">↓</div>
+        </div>
+    </header>
+
+    <!-- SECCIÓN 2: CUENTA REGRESIVA -->
+    <section class="section section-white countdown-section">
+        <div class="container">
+            <h2 class="section-title">¡Cada vez falta menos!</h2>
+            <div class="countdown-container">
+                <div class="time-block"><span id="days">00</span>
+                    <p>Días</p>
+                </div>
+                <div class="time-block"><span id="hours">00</span>
+                    <p>Hs</p>
+                </div>
+                <div class="time-block"><span id="minutes">00</span>
+                    <p>Min</p>
+                </div>
+                <div class="time-block"><span id="seconds">00</span>
+                    <p>Seg</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- SECCIÓN: UBICACIÓN Y CRONOGRAMA CON FONDO BEIGE ÚNICO -->
+    <section class="timeline-section section-beige section-relative">
+        <div class="hero-bg2"></div>
+
+        <div class="container">
+
+            <!-- Título principal -->
+            <div class="section-title">
+                <h2>Cronología del evento</h2>
+                <p>Así será nuestro gran día</p>
+            </div>
+
+            <!-- Línea de tiempo -->
+            <div class="timeline">
+
+                <div class="timeline-item">
+                    <img src="assets/img/iconos/ubicacion.png" alt="Lugar">
+                    <span class="timeline-heart">♥</span>
+                    <h3>Llegada</h3>
+                    <p>17:45 hs</p>
+                </div>
+
+                <div class="timeline-item">
+                    <img src="assets/img/iconos/anillo.png" alt="Ceremonia">
+                    <span class="timeline-heart">♥</span>
+                    <h3>Ceremonia</h3>
+                    <p>18:00 hs</p>
+                </div>
+
+                <div class="timeline-item">
+                    <img src="assets/img/iconos/coctel.png" alt="Recepción">
+                    <span class="timeline-heart">♥</span>
+                    <h3>Recepción</h3>
+                    <p>19:00 hs</p>
+                </div>
+
+                <div class="timeline-item">
+                    <img src="assets/img/iconos/cena.png" alt="Cena">
+                    <span class="timeline-heart">♥</span>
+                    <h3>Cena</h3>
+                    <p>20:30 hs</p>
+                </div>
+
+                <div class="timeline-item">
+                    <img src="assets/img/iconos/musica.png" alt="Fiesta">
+                    <span class="timeline-heart">♥</span>
+                    <h3>Fiesta</h3>
+                    <p>Hasta que el cuerpo aguante</p>
+                </div>
+
+            </div>
+
+            <!-- Botón ¿Cómo llegar? -->
+            <div class="card-actions">
+                <a href="https://maps.app.goo.gl/rum9mD272bP2KHFZA" target="_blank" class="btn btn-outline">
+                    <i class="fa-solid fa-map-location-dot"></i> ¿Cómo llegar?
+                </a>
+            </div>
+
+        </div>
+    </section>
+    <!-- ==========================================================================
+     TIMELINE DEL EVENTO
+========================================================================== -->
+
+
+
+    </div>
+    </section>
+
+    <!-- SECCIÓN 4: INFORMACIÓN IMPORTANTE -->
+    <section class="section section-white">
+        <div class="container">
+            <h2 class="section-title">Información Importante</h2>
+
+            <div class="info-grid">
+                <div class="info-card">
+                    <div class="info-icon"><i class="fa-solid fa-shirt"></i></div>
+                    <h3>Dress Code</h3>
+                    <p><br>Elegante Sport.<br>Te sugerimos <b>evitar prendas en tonos naturales,nudes o marrones.</b>
+                    </p>
+                </div>
+
+                <div class="info-card">
+                    <div class="info-icon"><i class="fa-solid fa-music"></i></div>
+                    <h3>Playlist</h3>
+                    <p>Ayudanos a <b>crear la playlist de nuestra boda.</b></p>
+                    <a href="https://open.spotify.com/playlist/73M8Vb4SVd6lgWWpgkjMKu?si=iJSGNSFjTo-ZZTN80cKOtg&utm_source=copy-link&pt=c0ddbda8083e11cab8ec23c608602825&pi=TBGM-gHBQom7C"
+                        target="_blank">
+                        Sugerir canción
+                    </a>
+                </div>
+
+                <div class="info-card">
+                    <div class="info-icon"><i class="fa-solid fa-circle-info"></i></div>
+                    <h3>Notas</h3>
+                    <p>
+                        • Evento <b>solo para adultos</b><br>
+                        • Deseamos que todos puedan disfrutar de la ceremonia, por eso <b>pedimos puntualidad.</b>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN 5: CONFIRMACIÓN DE ASISTENCIA -->
+    <section class="section section-relative">
+        <div class="confirm-bg"></div>
+        <div class="container small-container">
+            <div class="card-icon">💌</div>
+            <h2 class="section-title">Confirmación de Asistencia</h2>
+            <p class="section-text">
+                Nos haría muy felices compartir este día con vos.
+                Te pedimos que completes el formulario antes del <strong>1 de octubre de 2026.</strong>
+            </p>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdiXWyzF75J-Vs8ua3tjOUH0HrJXluwm7AMp-QTMXfyUTzj3g/viewform?usp=header"
+                target="_blank" class="btn btn-full">
+                Confirmar asistencia
+            </a>
+        </div>
+    </section>
+
+    <!-- SECCIÓN 6: GALERÍA DE FOTOS -->
+    <section class="section section-white section-relative">
+        <!-- Título centrado -->
+        <div class="container">
+            <h2 class="gallery-title">Retratos de Nuestro Amor</h2>
+            <p class="gallery-subtitle">Un minuto, un segundo, un instante que queda en la eternidad.</p>
+            <div class="gallery-icon">📷</div>
+        </div>
+
+        <!-- Carrusel expandible afuera del container estricto -->
+        <div class="gallery-container">
+            <div class="gallery-slider">
+                <div class="gallery-track" id="galleryTrack">
+                    <div class="gallery-item"><img src="assets/img/galeria/porto.JPG" alt="Foto 14"></div>
+                    <div class="gallery-item"><img src="assets/img/galeria/galeria20.png" alt="Foto 14"></div>
+                    <div class="gallery-item"><img src="assets/img/galeria/casa.png" alt="Foto 14"></div>
+                    <div class="gallery-item"><img src="assets/img/galeria/porto.JPG" alt="Foto 14"></div>
+                    <div class="gallery-item"><img src="assets/img/galeria/salta.JPG" alt="Foto 14"></div>
+                    <div class="gallery-item"><img src="assets/img/galeria/galeria18.JPG" alt="Foto 14"></div>
+                    <div class="gallery-item"><img src="assets/img/galeria/galeria15.jpeg" alt="Foto 15"></div>
+                    <div class="gallery-item"><img src="assets/img/galeria/galeria2.jpg" alt="Foto 2"></div>
+                    <div class="gallery-item"><img src="assets/img/galeria/galeria3.jpg" alt="Foto 3"></div>
+                    <div class="gallery-item"><img src="assets/img/galeria/galeria4.jpg" alt="Foto 4"></div>
+                    <div class="gallery-item"><img src="assets/img/galeria/galeria5.jpg" alt="Foto 5"></div>
+                    <div class="gallery-item"><img src="assets/img/galeria/galeria6.jpg" alt="Foto 6"></div>
+                    <div class="gallery-item"><img src="assets/img/galeria/galeria7.jpg" alt="Foto 7"></div>
+                    <div class="gallery-item"><img src="assets/img/galeria/galaeria8.jpg" alt="Foto 8"></div>
+                    <div class="gallery-item"><img src="assets/img/galeria/galeria9.jpg" alt="Foto 9"></div>
+                    <div class="gallery-item"><img src="assets/img/galeria/galeria10.jpg" alt="Foto 10"></div>
+                    <div class="gallery-item"><img src="assets/img/galeria/galeria11.png" alt="Foto 11"></div>
+                    <div class="gallery-item"><img src="assets/img/galeria/galeria12.jpg" alt="Foto 12"></div>
+                    <div class="gallery-item"><img src="assets/img/galeria/galeria13.jpg" alt="Foto 13"></div>
+                    <div class="gallery-item"><img src="assets/img/galeria/galeria14.jpg" alt="Foto 14"></div>
+                </div>
+            </div>
+
+            <div class="gallery-dots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN 7: REGALOS -->
+    <section class="section section-white regalo">
+        <div class="container small-container regalo-content">
+            <div class="card-icon"><img src="assets/img/iconos/regalo.png" alt="Icono Regalo"></div>
+            <h2 class="section-title">Regalos</h2>
+            <p class="section-text">
+                <b>Tu presencia será nuestro mejor regalo.</b>
+                Pero si además querés colaborar con nuestra luna de miel, <b>podés hacerlo mediante transferencia.</b>
+            </p>
+
+            <button class="btn btn-outline" onclick="toggleCbu()">Ver datos bancarios</button>
+
+            <div id="cbu-info" class="cbu-box hidden">
+                <p><strong>Titular: </strong>Martín Ramús</p>
+                <p><strong>Alias:</strong> boda.martin.juli </p>
+                <p><strong>CVU:</strong> 0000003100038941385304</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN 8: FRASE FINAL -->
+    <section class="section-relative">
+        <div class="confirm-bg"></div>
+        <div class="container">
+            <p class="frase-text">
+                Y entonces, elegimos un "para siempre"...
+            </p>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer-section">
+        <p class="footer-date">¡Los esperamos!</p>
+        <p class="footer-names">Juli & Martín</p>
+    </footer>
+
+</body>
+
+</html>
