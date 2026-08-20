@@ -1583,3 +1583,96 @@ body {
         margin: 15px 0;
     }
 }
+/* ==========================================================================
+   CONFIGURACIÓN MOBILE REPARADA Y BALANCEADA
+   ========================================================================== */
+@media (max-width: 600px) {
+/* Forzar a la línea de tiempo a ponerse en vertical */
+    .timeline {
+        display: flex !important;
+        flex-direction: column !important; /* Hack clave: los apila uno abajo del otro */
+        align-items: center !important;
+        width: 100% !important;
+    }
+
+    /* Ajustar las cajitas o ítems individuales de la cronología */
+    .timeline-item, .timeline-content, .checkpoint {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        width: 100% !important;
+        margin-bottom: 20px !important;
+        text-align: center !important;
+    }
+    /* 1. Ajustes del Bloque de Cronología */
+    .timeline-section .section-title h2 {
+        font-family: 'Signatie', serif !important;
+        font-size: 2.3rem !important; /* Tamaño intermedio perfecto para que no rompa la línea */
+        line-height: 1.1 !important;
+        margin-bottom: 8px !important;
+        display: block !important;
+    }
+
+    .timeline-subtitle {
+        font-family: 'Montserrat', sans-serif !important;
+        font-size: 1rem !important; /* Se agranda para que sea legible y no quede microscópico */
+        color: #666666 !important;
+        text-transform: uppercase !important; /* Le da un toque más limpio estilo imprenta */
+        letter-spacing: 1px !important;
+        margin-top: 5px !important;
+        margin-bottom: 25px !important;
+        display: block !important;
+    }
+
+    /* 2. Portada (Hero) y Títulos de Bienvenida */
+    .hero-section {
+        min-height: 100svh;
+        height: 100svh;
+        padding: 20px;
+    }
+
+    .hero-content {
+        width: 100%;
+        padding: 20px 10px;
+    }
+
+    .welcome-title {
+        font-size: 2.8rem !important;
+        line-height: 1.1 !important;
+        margin-bottom: 15px !important;
+    }
+
+    .wedding-title {
+        font-size: 2.6rem !important;
+        line-height: 1.1 !important;
+        margin-bottom: 12px !important;
+    }
+
+    .hero-tagline {
+        font-size: 0.75rem !important;
+        letter-spacing: 3px !important;
+        margin-bottom: 12px !important;
+    }
+
+    /* 3. Contenedores generales en Celular */
+    .info-grid, 
+    .cards-grid, 
+    .playlist-section, 
+    .notas-section {
+        display: flex !important;
+        flex-direction: column !important;
+        width: 100% !important;
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+        gap: 20px !important;
+    }
+
+    /* 4. Botones centrados */
+    .btn, .btn-outline, .btn-full {
+        display: inline-block !important;
+        margin: 15px auto !important;
+        text-align: center !important;
+        width: 100% !important;
+        max-width: 280px !important;
+    }
+}
