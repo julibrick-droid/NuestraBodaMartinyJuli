@@ -952,7 +952,7 @@ body {
     letter-spacing: normal !important;
     display: block !important;
 }
-}
+
 /* ==========================================================================
    CRONOLOGÍA VERTICAL PARA CELULARES
    ========================================================================= */
@@ -1171,23 +1171,23 @@ body {
 
   /* Fuerza el espacio en celulares y pantallas chicas */
 @media (max-width: 600px) {
-    section.countdown-section,
-    .countdown-section.section-white {
-        padding-top: 100px !important;
-        padding-bottom: 100px !important;
-        display: flex !important;
-        flex-direction: column !important;
-        justify-content: center !important;
+   /* Ajuste fino para que los títulos cursivos no se desborden en el celular */
+    .countdown-section .section-title,
+    .section-white .section-title,
+    .small-container .section-title,
+    .regalo-content .section-title,
+    .gallery-title,
+    .regalos-section h2,
+    .asistencia-section h2,
+    .informacion-section h2,
+    .countdown-section h2 {
+        font-family: 'Signatie', serif !important;
+        font-size: 6.5vw !important; /* Bajó de 9.5vw a 6.5vw para que no se encime */
+        line-height: 1.2 !important;
+        margin-bottom: 15px !important;
+        text-align: center !important;
+        display: block !important;
     }
-
-    /* Por si el contenedor de adentro está frenando el diseño */
-    section.countdown-section .container {
-        padding-top: 0 !important;
-        padding-bottom: 0 !important;
-        margin-top: 0 !important;
-        margin-bottom: 0 !important;
-    }
-}
     /* ===== UBICACIÓN / TIMELINE (EMBLOCADO E INDEPENDIENTE) ===== */
 
     .timeline-section {
