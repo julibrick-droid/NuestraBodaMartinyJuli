@@ -1747,4 +1747,22 @@ body {
 .section-text .texto-resaltado {
     font-weight: 700 !important;
     display: inline !important;
+}/* Forzamos a que el texto común de confirmación sea bien finito */
+.section-text {
+    font-weight: 300 !important;
+}
+
+/* Forzamos a que ÚNICAMENTE el "antes del" se mantenga grueso */
+.section-text .texto-resaltado,
+.section-text strong {
+    font-weight: 700 !important;
+}
+/* Afecta SOLAMENTE al párrafo de la tarjeta de confirmación de asistencia */
+.container.small-container .section-text {
+    font-weight: 300 !important;
+}
+
+/* Fuerza el grosor únicamente en el "antes del" dentro de esa misma tarjeta */
+.container.small-container .section-text .texto-resaltado {
+    font-weight: 700 !important;
 }
