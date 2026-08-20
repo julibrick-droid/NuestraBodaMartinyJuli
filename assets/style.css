@@ -1738,4 +1738,13 @@ body {
         box-sizing: border-box !important;
         margin: 0 auto !important;
         padding: 10px !important;
-    }
+    }/* Resetea el párrafo de confirmación para que NO sea negrita */
+.section-text {
+    font-weight: 300 !important;
+}
+
+/* Fuerza a que SOLAMENTE la palabra que elegiste sea negrita */
+.section-text .texto-resaltado {
+    font-weight: 700 !important;
+    display: inline !important;
+}
