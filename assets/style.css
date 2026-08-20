@@ -1456,293 +1456,172 @@ body {
         }
     }
 }
-
-    /* ==========================================================================
-   SOLUCIÓN AL CORTE HORIZONTAL EN CELULARES (FORZADO)
+/* ==========================================================================
+   --- ESTILO GLOBAL PARA LA FRASE (Para todas las pantallas) ---
    ========================================================================== */
-    @media (max-width: 600px) {
+.frase-text {
+    font-family: 'Signatie', cursive !important;
+    line-height: 1.2;
+    letter-spacing: 0;
+    text-transform: none;
+    text-align: center;
+    display: block;
+    width: 100%;
+}
 
-        /* Forzamos a que todos los contenedores de tarjetas se apilen verticalmente */
-        .info-grid,
-        .cards-grid,
-        .playlist-section,
-        .notas-section,
-        [class*="-grid"],
-        [class*="-container"] {
-            display: flex !important;
-            flex-direction: column !important;
-            width: 100% !important;
-            max-width: 100% !important;
-            padding-left: 10px !important;
-            padding-right: 10px !important;
-            gap: 20px !important;
-        }
-
-        /* Forzamos a que las tarjetas individuales NO se estiren hacia la derecha */
-        .info-card,
-        .card,
-        [class*="-card"] {
-            width: 100% !important;
-            min-width: 0 !important;
-            max-width: 100% !important;
-            box-sizing: border-box !important;
-            margin-left: 0 !important;
-            margin-right: 0 !important;
-        }
-
-        /* Achicamos el título de la Cronología del Evento */
-        .timeline-section .section-title h2 {
-            font-family: 'Signatie', serif !important;
-            font-size: 2.2rem !important;
-            line-height: 1.2 !important;
-            margin-bottom: 5px !important;
-        }
-
-        /* 1. Generales de Secciones y Textos */
-        .section {
-            padding: 60px 16px;
-        }
-
-        .container,
-        .small-container,
-        .gallery-container {
-            width: 100%;
-            max-width: 100%;
-            padding-left: 0;
-            padding-right: 0;
-        }
-
-        .section-title {
-            font-size: 1.8rem;
-            line-height: 1.25;
-            margin-bottom: 25px;
-        }
-
-        .section-text {
-            font-size: 0.95rem;
-            line-height: 1.7;
-        }
-
-        /* 2. Títulos y Nombres Achicados */
-        .wedding-title {
-            font-size: 2.4rem !important;
-            line-height: 1.1 !important;
-            margin-bottom: 12px !important;
-        }
-
-        .welcome-title {
-            font-size: 2.6rem !important;
-            line-height: 1.1 !important;
-            margin-bottom: 15px !important;
-        }
-
-        /* 3. Tarjetas de Información apiladas correctamente */
-        .info-grid,
-        .cards-grid,
-        .playlist-section,
-        .notas-section {
-            display: flex !important;
-            flex-direction: column !important;
-            width: 100% !important;
-            max-width: 100% !important;
-            padding-left: 10px !important;
-            padding-right: 10px !important;
-            gap: 20px !important;
-        }
-
-        .info-card,
-        .card {
-            width: 100% !important;
-            min-width: 0 !important;
-            max-width: 100% !important;
-            box-sizing: border-box !important;
-            margin-left: 0 !important;
-            margin-right: 0 !important;
-        }
-
-        /* 4. ARREGLO Y CENTRADO DE TODOS LOS BOTONES (Asistencia, Sugerir Canción, etc.) */
-        .btn,
-        .btn-outline,
-        .btn-full {
-            display: inline-block !important;
-            margin: 15px auto !important;
-            text-align: center !important;
-            width: 100% !important;
-            max-width: 280px !important;
-            box-sizing: border-box !important;
-        }
-
-        /* 5. Galería Horizontal Intacta */
-        .gallery-track {
-            display: flex !important;
-            flex-direction: row !important;
-            gap: 12px !important;
-        }
-
-        .gallery-item {
-            flex: 0 0 100% !important;
-            width: 100% !important;
-            max-width: 100% !important;
-        }
-
-        /* 6. Frase Final */
-        .frase-text {
-            font-size: 1.5rem !important;
-            margin: 15px 0 !important;
-        }
-    }
-
-    /* --- ESTILO GLOBAL PARA LA FRASE (Para todas las pantallas) --- */
+/* Tamaño para pantallas grandes (Compu) */
+@media (min-width: 601px) {
     .frase-text {
-        font-family: 'Signatie', cursive !important;
-        line-height: 1.2;
-        letter-spacing: 0;
-        text-transform: none;
-        text-align: center;
-        display: block;
-        width: 100%;
+        font-size: 3.5rem;
+        margin: 20px 0;
+    }
+} /* <- Esta llave que faltaba arregla el archivo completo */
+
+
+/* ==========================================================================
+   CONFIGURACIÓN MOBILE UNIFICADA, BALANCEADA Y SIN ERRORES (CELULARES)
+   ========================================================================== */
+@media (max-width: 600px) {
+
+    /* 1. Forzamos a apilar contenedores y tarjetas verticalmente */
+    .info-grid,
+    .cards-grid,
+    .playlist-section,
+    .notas-section,
+    [class*="-grid"],
+    [class*="-container"],
+    .timeline {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+        gap: 20px !important;
     }
 
-    /* Tamaño para pantallas grandes (Compu) */
-    @media (min-width: 601px) {
-        .frase-text {
-            font-size: 3.5rem;
-            margin: 20px 0;
-        }
+    /* 2. Control de ancho para tarjetas individuales */
+    .info-card,
+    .card,
+    .timeline-item,
+    .timeline-content,
+    .checkpoint,
+    [class*="-card"] {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        width: 100% !important;
+        min-width: 0 !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        margin-bottom: 20px !important;
+        text-align: center !important;
     }
 
-    /* Tamaño para pantallas chicas (Celular) */
-    @media (max-width: 600px) {
-        .frase-text {
-            font-size: 1.5rem !important;
-            margin: 15px 0;
-        }
+    /* 3. Estilos de Secciones y Textos Generales en Celular */
+    .section {
+        padding: 40px 16px !important;
+    }
+
+    .container,
+    .small-container,
+    .gallery-container {
+        width: 100% !important;
+        max-width: 100% !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+    .section-text {
+        font-size: 0.95rem !important;
+        line-height: 1.7 !important;
+    }
+
+    /* 4. Títulos de Portada y Bienvenida Escalados */
+    .wedding-title {
+        font-size: 2.4rem !important;
+        line-height: 1.1 !important;
+        margin-bottom: 12px !important;
+    }
+
+    .welcome-title {
+        font-size: 2.6rem !important;
+        line-height: 1.1 !important;
+        margin-bottom: 15px !important;
+    }
+
+    .hero-tagline {
+        font-size: 0.75rem !important;
+        letter-spacing: 3px !important;
+        margin-bottom: 12px !important;
+    }
+
+    .timeline-subtitle {
+        font-family: 'Montserrat', sans-serif !important;
+        font-size: 0.9rem !important;
+        color: #666666 !important;
+        text-transform: uppercase !important;
+        letter-spacing: 1px !important;
+        margin-top: 5px !important;
+        margin-bottom: 25px !important;
+        display: block !important;
+    }
+
+    /* 5. Botones Centrados y Adaptados al Celular */
+    .btn,
+    .btn-outline,
+    .btn-full {
+        display: inline-block !important;
+        margin: 15px auto !important;
+        text-align: center !important;
+        width: 100% !important;
+        max-width: 280px !important;
+        box-sizing: border-box !important;
+    }
+
+    /* 6. Galería Horizontal Intacta */
+    .gallery-track {
+        display: flex !important;
+        flex-direction: row !important;
+        gap: 12px !important;
+    }
+
+    .gallery-item {
+        flex: 0 0 100% !important;
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+
+    /* 7. Frase Final en Celular */
+    .frase-text {
+        font-size: 1.5rem !important;
+        margin: 15px 0 !important;
     }
 
     /* ==========================================================================
-   CONFIGURACIÓN MOBILE REPARADA Y BALANCEADA
-   ========================================================================== */
-    @media (max-width: 600px) {
-
-        /* Forzar a la línea de tiempo a ponerse en vertical */
-        .timeline {
-            display: flex !important;
-            flex-direction: column !important;
-            /* Hack clave: los apila uno abajo del otro */
-            align-items: center !important;
-            width: 100% !important;
-        }
-
-        /* Ajustar las cajitas o ítems individuales de la cronología */
-        .timeline-item,
-        .timeline-content,
-        .checkpoint {
-            display: flex !important;
-            flex-direction: column !important;
-            align-items: center !important;
-            width: 100% !important;
-            margin-bottom: 20px !important;
-            text-align: center !important;
-        }
-
-        /* 1. Ajustes del Bloque de Cronología */
-        .timeline-section .section-title h2 {
-            font-family: 'Signatie', serif !important;
-            font-size: 2.3rem !important;
-            /* Tamaño intermedio perfecto para que no rompa la línea */
-            line-height: 1.1 !important;
-            margin-bottom: 8px !important;
-            display: block !important;
-        }
-
-        .timeline-subtitle {
-            font-family: 'Montserrat', sans-serif !important;
-            font-size: 1rem !important;
-            /* Se agranda para que sea legible y no quede microscópico */
-            color: #666666 !important;
-            text-transform: uppercase !important;
-            /* Le da un toque más limpio estilo imprenta */
-            letter-spacing: 1px !important;
-            margin-top: 5px !important;
-            margin-bottom: 25px !important;
-            display: block !important;
-        }
-
-        /* 2. Portada (Hero) y Títulos de Bienvenida */
-        .hero-section {
-            min-height: 100svh;
-            height: 100svh;
-            padding: 20px;
-        }
-
-        .hero-content {
-            width: 100%;
-            padding: 20px 10px;
-        }
-
-        .welcome-title {
-            font-size: 2.8rem !important;
-            line-height: 1.1 !important;
-            margin-bottom: 15px !important;
-        }
-
-        .wedding-title {
-            font-size: 2.6rem !important;
-            line-height: 1.1 !important;
-            margin-bottom: 12px !important;
-        }
-
-        .hero-tagline {
-            font-size: 0.75rem !important;
-            letter-spacing: 3px !important;
-            margin-bottom: 12px !important;
-        }
-
-        /* 3. Contenedores generales en Celular */
-        .info-grid,
-        .cards-grid,
-        .playlist-section,
-        .notas-section {
-            display: flex !important;
-            flex-direction: column !important;
-            width: 100% !important;
-            padding-left: 10px !important;
-            padding-right: 10px !important;
-            gap: 20px !important;
-        }
-
-        /* 4. Botones centrados */
-        .btn,
-        .btn-outline,
-        .btn-full {
-            display: inline-block !important;
-            margin: 15px auto !important;
-            text-align: center !important;
-            width: 100% !important;
-            max-width: 280px !important;
-        }
-
-        /* RESETEO ULTRA ESPECÍFICO PARA QUE LOS TÍTULOS CURSIVOS SE VEAN BIEN EN CELULAR */
-        h2.section-title,
-        .section-title h2,
-        .gallery-title,
-        .countdown-section .section-title,
-        .section-white .section-title,
-        .small-container .section-title,
-        .regalo-content .section-title,
-        .regalos-section h2,
-        .asistencia-section h2,
-        .informacion-section h2,
-        .countdown-section h2 {
-            font-family: 'Signatie', serif !important;
-            font-size: 2.2rem !important;
-            /* Pasamos de VW a REM fijo para congelar el tamaño */
-            line-height: 1.3 !important;
-            /* Le da aire para que no se choquen los trazos largos */
-            margin-top: 10px !important;
-            margin-bottom: 15px !important;
-            text-align: center !important;
-            display: block !important;
-            width: 100% !important;
-        }
+       DOMADO DEFINITIVO DE TÍTULOS CURSIVOS (SIGNATIE) EN CELULAR
+       ========================================================================== */
+    h2.section-title,
+    .section-title h2,
+    .gallery-title,
+    .countdown-section .section-title,
+    .section-white .section-title,
+    .small-container .section-title,
+    .regalo-content .section-title,
+    .regalos-section h2,
+    .asistencia-section h2,
+    .informacion-section h2,
+    .countdown-section h2 {
+        font-family: 'Signatie', serif !important;
+        font-size: 2.2rem !important; /* Tamaño fijo controlado y súper elegante */
+        line-height: 1.4 !important; /* Espacio vertical para que luzcan las curvas */
+        margin-top: 10px !important;
+        margin-bottom: 20px !important;
+        text-align: center !important;
+        display: block !important;
+        width: 100% !important;
     }
+}
