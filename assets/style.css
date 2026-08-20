@@ -934,7 +934,25 @@ body {
         transform: translateY(-5px);
     }
 }
-
+/* ==========================================================================
+   UNIFICACIÓN Y AGRANDADO DE TÍTULOS PRINCIPALES (PC)
+   ========================================================================= */
+.countdown-section .section-title,
+.section-white .section-title,
+.small-container .section-title,
+.regalo-content .section-title,
+.gallery-title {
+    font-family: 'Signatie', serif !important;
+    font-size: 5rem !important; /* Tamaño gigante y súper elegante para la PC */
+    color: #a67c52 !important;   /* Tu marrón dorado estético */
+    text-align: center !important;
+    line-height: 1.2 !important;
+    margin-bottom: 35px !important;
+    text-transform: none !important;
+    letter-spacing: normal !important;
+    display: block !important;
+}
+}
 /* ==========================================================================
    CRONOLOGÍA VERTICAL PARA CELULARES
    ========================================================================= */
