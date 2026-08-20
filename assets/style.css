@@ -1468,7 +1468,33 @@ body {
     display: block;
     width: 100%;
 }
+/* ==========================================================================
+   SECCIÓN DE IMAGEN FINAL EN PANTALLA COMPLETA (BORDE A BORDE)
+   ========================================================================== */
+.section-frase-final {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 0 !important; /* Eliminamos el aire de arriba y abajo */
+    margin: 0 !important;
+    text-align: center;
+    line-height: 0; /* Evita una pequeña línea blanca que a veces queda abajo de la foto */
+    overflow: hidden;
+}
 
+.container-frase-img {
+    width: 100% !important;
+    max-width: 100% !important; /* Quitamos el tope de 900px para que cubra todo */
+    padding: 0 !important; /* Quitamos los márgenes laterales */
+    margin: 0 !important;
+}
+
+.frase-img-responsive {
+    width: 100% !important;
+    height: auto !important; /* Se estira al 100% del ancho de cualquier monitor o celular */
+    display: block;
+    margin: 0;
+    padding: 0;
+}
 /* Tamaño para pantallas grandes (Compu) */
 @media (min-width: 601px) {
     .frase-text {
